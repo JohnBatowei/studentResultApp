@@ -8,7 +8,7 @@ services:
     startCommand: npm start
     envVars:
       - key: studuent_app_online
-        value: 'mongodb+srv://aritronwebsites:u1D5lgcln6arKH9w@studentapp.zm79gko.mongodb.net/?retryWrites=true&w=majority&appName=StudentApp'
+        sync: false # Set this value in the Render Dashboard
       - key: SECRET
-        value: 'my GvU hard to decode'
+        sync: false # Set this value in the Render Dashboard
     plan: free

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 // const student = process.env.student
-const studuent_app = process.env.studuent_app_online 
+const studuent_app = process.env.studuent_app_online
 // const studuent_app = process.env.studuent_app_online || process.env.studuent_app
 // const admin = process.env.admindb
 // const staff = process.env.staff
