@@ -11,8 +11,6 @@ services:
         value: 'mongodb://localhost:27017/student'
       - key: studuent_app
         value: 'mongodb://localhost:27017/studuent_app'
-      - key: studuent_app_online
-        value: 'mongodb+srv://aritronwebsites:u1D5lgcln6arKH9w@studentapp.zm79gko.mongodb.net/?retryWrites=true&w=majority&appName=StudentApp'
       - key: admindb
         value: 'mongodb://localhost:27017/admin'
       - key: coursesdb
