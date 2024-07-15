@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: practical-work
+    env: node
+    region: oregon
+    branch: master
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: student
+        value: 'mongodb://localhost:27017/student'
+      - key: studuent_app
+        value: 'mongodb://localhost:27017/studuent_app'
+      - key: studuent_app_online
+        value: 'mongodb+srv://aritronwebsites:u1D5lgcln6arKH9w@studentapp.zm79gko.mongodb.net/?retryWrites=true&w=majority&appName=StudentApp'
+      - key: admindb
+        value: 'mongodb://localhost:27017/admin'
+      - key: coursesdb
+        value: 'mongodb://localhost:27017/courseDB'
+      - key: result
+        value: 'mongodb://localhost:27017/result'
+      - key: staff
+        value: 'mongodb://localhost:27017/staff'
+      - key: studentCourses
+        value: 'mongodb://localhost:27017/studentCourses'
+      - key: loginSession
+        value: 'mongodb://localhost:27017/loginSession'
+      - key: generateScratchCard
+        value: 'mongodb://localhost:27017/scratchCard'
+      - key: regCourses
+        value: 'mongodb://localhost:27017/StudentRegCourses'
+      - key: SECRET
+        value: 'my GvU hard to decode'
+    plan: free
