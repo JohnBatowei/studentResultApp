@@ -8,7 +8,8 @@ let session = require('express-session')
 let mongoDbSession = require('connect-mongodb-session')(session)
 var expressLayout = require("express-ejs-layouts");
 require('dotenv').config()
-
+// connecting to mongodb
+const connect = require('./config/config')
 
 var indexRouter = require('./routes/index');
 let adminRouter = require('./routes/apiAdmin')
@@ -82,8 +83,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// connecting to mongodb
-const connect = require('./config/config')
+
 
 async function connectDB(conn){
   const connected = await conn
