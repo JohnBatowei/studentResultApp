@@ -16,14 +16,14 @@ const studuent_app = process.env.studuent_app_online
 
 const connectionParams = { useNewUrlParser: true, useUnifiedTopology: true,}
 
-mongoose.student = mongoose.createConnection(studuent_app)
-mongoose.admindb = mongoose.createConnection(studuent_app)
-mongoose.staff = mongoose.createConnection(studuent_app)
-mongoose.result = mongoose.createConnection(studuent_app)
-mongoose.coursesdb = mongoose.createConnection(studuent_app)
-mongoose.studentCourses = mongoose.createConnection(studuent_app)
-mongoose.generateCard = mongoose.createConnection(studuent_app)
-mongoose.regCourses = mongoose.createConnection(studuent_app)
+mongoose.student = mongoose.createConnection(studuent_app,connectionParams)
+mongoose.admindb = mongoose.createConnection(studuent_app,connectionParams)
+mongoose.staff = mongoose.createConnection(studuent_app,connectionParams)
+mongoose.result = mongoose.createConnection(studuent_app,connectionParams)
+mongoose.coursesdb = mongoose.createConnection(studuent_app,connectionParams)
+mongoose.studentCourses = mongoose.createConnection(studuent_app,connectionParams)
+mongoose.generateCard = mongoose.createConnection(studuent_app,connectionParams)
+mongoose.regCourses = mongoose.createConnection(studuent_app,connectionParams)
 
 
 module.exports = mongoose
